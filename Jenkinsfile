@@ -1,9 +1,9 @@
-pipeline{
+pipeline {
   
   agent any
   
   stages{
-   stage {"Build it"}{
+   stage{"Build it"}{
     steps{
       echo "Building the Projefct"
     }
