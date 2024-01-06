@@ -3,13 +3,13 @@ pipeline {
   agent any
   
   stages{
-    stage {'Buildit'}{
+    stage ('Buildit'){
       steps{
         echo "Building the Projefct"
         }
     }
   }
-  post{
+  post {
     success{
       emailext body: '''Hello, This is test mail from pipeline ,Thank you''', subject: 'Test Email from Jenkins Pipeline', to: 'pmistry9296@gmail.com'
       }
