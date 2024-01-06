@@ -3,9 +3,9 @@ pipeline {
   agent any
   
   stages{
-   stage{"Build it"}{
-    steps{
-      echo "Building the Projefct"
+    stage {'Build it'}{
+      steps{
+        echo "Building the Projefct"
     }
 }
   post{
@@ -14,4 +14,3 @@ pipeline {
       }
     }
  }  
-}
